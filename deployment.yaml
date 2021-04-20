@@ -16,7 +16,7 @@ spec:
       - name: music-player
         image: 891633128047.dkr.ecr.ap-south-1.amazonaws.com/project:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -28,7 +28,7 @@ spec:
   ports:
     - protocol: TCP
       port: 8080
-      targetPort: 80
+      targetPort: 8080
   type: LoadBalancer    
    
 
