@@ -1,5 +1,4 @@
-arch:
-  - arm64
+language: ruby
 env:
   - IMAGE=sunil6680/testing_with_bitbucket:traves
 services:
