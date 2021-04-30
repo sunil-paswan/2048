@@ -5,6 +5,6 @@ services:
 
 script:
   - docker build -t sunil6680/testing_with_bucket:2048 .
-  - docker login -u {docker_username} -p '${docker_pass}'
+  - echo ${docker_pass} | docker login -u {docker_username} --password-stdin
   - docker push sunil6680/testing_with_bucket:2048
 
