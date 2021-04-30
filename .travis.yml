@@ -1,9 +1,10 @@
-language: ruby
+language: bash
 
 services:
   - docker
 
-before_install:
-  - docker build -t carlad/sinatra .
- 
+script:
+  - docker build -t sunil6680/testing_with_bucket:2048 .
+  - docker login -u {docker_username} -p '${docker_pass}'
+  - docker push sunil6680/testing_with_bucket:2048
 
