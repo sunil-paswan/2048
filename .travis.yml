@@ -4,7 +4,7 @@ services:
   - docker
 
 script:
-  - docker build -t sunil6680/testing_with_bucket:2048 .
-  - echo $DOCKER_PASS | docker login -u$DOCKER_USER --password-stdin
-  - docker push sunil6680/testing_with_bucket:2048
+  - docker build -t sunil6680/testing_with_bitbucket:2048 .
+  - docker login -u sunil6680 -p '#$unil6680'
+  - docker push sunil6680/testing_with_bitbucket:2048
 
